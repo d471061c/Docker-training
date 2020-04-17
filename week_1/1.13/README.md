@@ -1,0 +1,1 @@
+Paste the application from https://github.com/docker-hy/spring-example-project to this directory.

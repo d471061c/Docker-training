@@ -1,0 +1,1 @@
+Paste the application from https://github.com/docker-hy/rails-example-project to this directory.

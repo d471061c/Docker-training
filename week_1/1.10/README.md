@@ -1,0 +1,1 @@
+Paste the application from https://github.com/docker-hy/frontend-example-docker to this directory.

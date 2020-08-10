@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+    redis:
+        build: ./redis
+        ports: 
+            - 6379:6379
+        volumes:
+            - ./redis/redis.conf:/redis.conf
+    frontend:
+        build: ./frontend
+        environment: 
+            - API_URL=http://localhost:8000
+        ports:
+            - 5000:5000
+    backend:
+        build: ./backend
+        environment: 
+            - FRONT_URL=http://localhost:5000
+            - REDIS=redis
+        ports:
+            - 8000:8000
